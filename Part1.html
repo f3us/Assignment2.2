@@ -1,0 +1,27 @@
+<html>
+    <head>
+        <title>Closure Function</title>
+        <script>
+            //type one closure function
+            function addNumber(numberOne,numberTwo)
+            {
+                var returnValue="Result is:";
+                
+                function add()
+                {
+                    
+                    var addition =returnValue+(numberOne+numberTwo);
+                    return addition;
+                }
+                return add();
+                
+            }
+            
+            var sum=addNumber(11,12);
+            
+            document.write(sum);
+            document.write("</br>");       
+        </script>
+    </head>
+    <body></body>
+</html>

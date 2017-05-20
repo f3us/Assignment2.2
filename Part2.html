@@ -1,0 +1,17 @@
+<html>
+    <head>
+        <title>Increment</title>
+        <script>
+            var incrementNumber=(function()
+            {
+                var addNumber=0;
+                return function(){
+                    return ++addNumber  ;
+                }
+                
+            })();
+        </script>
+        <input type = "button" id="clickButton" value = "click Me" onclick="alert(incrementNumber());"/>
+        
+    </head>
+</html>
